@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pesan churros renyah di luar, lembut di dalam. Gratis ongkir untuk pesanan pertama.">
+  <title>Churros jacko - Snack Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#home" aria-label="Churros jacko, ke beranda">👑 <span>Churros jacko</span></a>
+    <nav id="menu" class="menu" aria-label="Navigasi utama">
+      <a href="#home" class="active">Home</a>
+      <a href="#menu-churros">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn cart-btn" id="cartOpen" aria-label="Buka keranjang">
+        🛒 <span class="badge" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="chip">Gratis ongkir pesanan pertama</p>
+        <h1>Best-seller<br>Churros</h1>
+        <p class="lead">Renyah di luar, lembut di dalam. Digoreng saat dipesan dan diantar dalam 30 menit.</p>
+        <div class="hero-cta">
+          <a href="#menu-churros" class="btn btn-primary">Order Now</a>
+          <a href="#about" class="btn btn-ghost">Kenali kami</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/hero.jpg" alt="Tumpukan churros berbalut gula kayu manis" width="950" height="580">
+        <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu-churros">
+      <div class="section-head">
+        <h2>Flavor variant menu</h2>
+        <div class="filters" role="group" aria-label="Filter rasa">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="coklat">Coklat</button>
+          <button class="filter" data-filter="buah">Buah</button>
+          <button class="filter" data-filter="creamy">Creamy</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <article class="card" data-cat="creamy" data-id="matcha" data-name="Matcha" data-price="18000">
+          <img src="images/matcha.jpg" alt="Churros matcha" loading="lazy">
+          <div class="card-body"><h3>Matcha</h3><span class="price">Rp18.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+        <article class="card" data-cat="coklat" data-id="choco" data-name="Choco Drizzle" data-price="18000">
+          <img src="images/choco.jpg" alt="Churros coklat dengan lelehan putih" loading="lazy">
+          <div class="card-body"><h3>Choco Drizzle</h3><span class="price">Rp18.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+        <article class="card" data-cat="creamy" data-id="caramel" data-name="Caramel" data-price="20000">
+          <img src="images/caramel.jpg" alt="Churros saus karamel" loading="lazy">
+          <div class="card-body"><h3>Caramel</h3><span class="price">Rp20.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+        <article class="card" data-cat="buah" data-id="strawberry" data-name="Strawberry" data-price="20000">
+          <img src="images/strawberry.jpg" alt="Churros stroberi segar" loading="lazy">
+          <div class="card-body"><h3>Strawberry</h3><span class="price">Rp20.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+        <article class="card" data-cat="creamy" data-id="cheese" data-name="Cream Cheese" data-price="22000">
+          <img src="images/cheese.jpg" alt="Churros cream cheese" loading="lazy">
+          <div class="card-body"><h3>Cream Cheese</h3><span class="price">Rp22.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+        <article class="card" data-cat="coklat" data-id="original" data-name="Cinnamon Sugar" data-price="15000">
+          <img src="images/plate.jpg" alt="Churros original gula kayu manis" loading="lazy">
+          <div class="card-body"><h3>Cinnamon Sugar</h3><span class="price">Rp15.000</span></div>
+          <button class="btn btn-add">Tambah</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- PAKET -->
+    <section class="section package" id="about">
+      <div class="package-img"><img src="images/packaging.jpg" alt="Kemasan box Boss Churros pink kotak-kotak" loading="lazy"></div>
+      <div class="package-text">
+        <h2>Snack Package</h2>
+        <p class="stars" aria-label="Rating 5 dari 5">★★★★★</p>
+        <p>Dikemas dalam box pink yang manis dan rapat supaya tetap hangat dan renyah sampai di tanganmu. Cocok untuk hadiah, nonton bareng, atau teman belajar.</p>
+        <ul class="perks">
+          <li>Digoreng setelah dipesan</li>
+          <li>Estimasi antar 30 menit</li>
+          <li>Gratis ongkir untuk belanja Rp50.000+</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="section reviews">
+      <h2>Customer</h2>
+      <p class="stars" aria-label="Rating 5 dari 5">★★★★★</p>
+      <blockquote id="quote">“Crispy outside, fluffy inside!”</blockquote>
+      <p id="quoteBy" class="quote-by">Nadia, Jakarta</p>
+      <div class="dots" id="dots" role="tablist" aria-label="Pilih ulasan"></div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo">
+      <p>Promo launching: diskon <strong>10%</strong> untuk pesanan pertama. Pakai kode <code>CHURROS10</code> di keranjang.</p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div>
+      <p class="logo-foot">👑 Boss Churros</p>
+      <p>© 2026 Boss Churros. Semua hak dilindungi.</p>
+    </div>
+    <div class="social">
+      <span>Follow us:</span>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+    </div>
+  </footer>
+
+  <!-- KERANJANG + CHECKOUT -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Keranjang</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Tutup keranjang">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="empty" id="cartEmpty">Keranjang masih kosong. Yuk pilih rasa favoritmu!</p>
+
+      <div id="checkoutArea">
+        <h3 class="sub">Data pembeli</h3>
+        <div class="order-form">
+          <input id="nama" placeholder="Nama lengkap" autocomplete="name">
+          <input id="hp" type="tel" placeholder="Nomor WhatsApp (08xxx)" autocomplete="tel">
+          <textarea id="alamat" rows="2" placeholder="Alamat pengiriman lengkap" autocomplete="street-address"></textarea>
+          <input id="catatan" placeholder="Catatan (opsional, mis. saus dipisah)">
+        </div>
+
+        <h3 class="sub">Metode pembayaran</h3>
+        <div class="pay-options" id="payOptions">
+          <label class="pay"><input type="radio" name="bayar" value="qris" checked><span>QRIS</span></label>
+          <label class="pay"><input type="radio" name="bayar" value="bank"><span>Transfer Bank</span></label>
+          <label class="pay"><input type="radio" name="bayar" value="ewallet"><span>E-Wallet</span></label>
+          <label class="pay"><input type="radio" name="bayar" value="cod"><span>Bayar di tempat</span></label>
+        </div>
+        <div class="pay-info" id="payInfo">
+          <p id="payText"></p>
+          <img id="qrisImg" src="images/qris.jpg" alt="Kode QRIS Boss Churros" hidden>
+        </div>
+
+        <h3 class="sub">Kode promo</h3>
+        <div class="promo-row">
+          <input id="promo" placeholder="Masukkan kode" autocomplete="off">
+          <button class="btn-small" id="promoBtn" type="button">Pakai</button>
+        </div>
+        <p class="promo-msg" id="promoMsg"></p>
+      </div>
+    </div>
+
+    <div class="drawer-foot">
+      <div class="sum"><span>Subtotal</span><span id="sumSub">Rp0</span></div>
+      <div class="sum"><span>Diskon</span><span id="sumDisc">-Rp0</span></div>
+      <div class="sum"><span>Ongkir</span><span id="sumShip">Rp0</span></div>
+      <div class="total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-primary full" id="checkout" type="button">Bayar &amp; pesan via WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
